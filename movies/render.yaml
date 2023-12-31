@@ -1,0 +1,5 @@
+services:
+  - name: spring-boot-app
+    env: docker
+    buildCommand: docker build -t spring-boot-app .
+    startCommand: docker run -p 8080:8080 spring-boot-app
